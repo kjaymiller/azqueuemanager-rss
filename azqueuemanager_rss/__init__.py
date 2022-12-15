@@ -53,7 +53,6 @@ class RSSTransform(ExtensionBaseClass):
         feed = feedparser.parse(self.rss_in)
 
         for item in filter(self.parser_filter, feed.entries):
-            print(item['title'])
             yield item
     
     def transform_preview(self, data: str):
