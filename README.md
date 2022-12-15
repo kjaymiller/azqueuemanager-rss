@@ -1,12 +1,9 @@
----
-extension: azqueuemanager-rss
-Transformname: RSSTransform
-transform_in: ✅
-transform_preview: 🚫
-transform_out: 🚫
----
+# AzQueueManager-RSS Extension
+RSS Extension  for [AZ Queue Manager](https://pypi.org/project/azqueuemanager/)
 
-
-# Base AzQueueManager  Extension Template
-template for building extensions for AZ Queue Manager
-
+|||
+---|---
+|Transform | RSSTransform | 
+|transform_in | ✅ |
+|transform_preview | 🚫 |
+|transform_out | 🚫 |
