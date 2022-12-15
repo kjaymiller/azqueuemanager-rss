@@ -1,7 +1,12 @@
-# Base AzQueueManager  Extension Template
-teamplate for building extensions for AZ Queue Manager
+---
+extension: azqueuemanager-rss
+Transformname: RSSTransform
+transform_in: ✅
+transform_preview: 🚫
+transform_out: 🚫
+---
 
-## Getting Started
-- Create a new repository from this template.
-- Update the pyproject.toml file
-  - add your requirements `project.dependencies`
+
+# Base AzQueueManager  Extension Template
+template for building extensions for AZ Queue Manager
+
