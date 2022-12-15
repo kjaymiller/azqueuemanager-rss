@@ -4,15 +4,14 @@ build-backend = "setuptools.build_meta"
 
 
 [project]
-name = "azqueuemanager-<extension>"
-description = "My extension for AZQueueManager"
-dependencies = ['azqueuemanager']
+name = "azqueuemanager-rss"
+description = "rss-parser for AZQueueManager"
+dependencies = ['azqueuemanager', 'feedparser', 'dateparser']
 readme = "README.md"
 license = { text = "MIT"}
 classifiers = [
-    "AZQueueManager :: Extension",
     "Programming Language :: Python :: 3",
 ]
-keywords = ["azqueuemanager", "extension", "myextension"]
+keywords = ["azqueuemanager", "extension", "rss", "azure storage queues"]
 requires-python = ">=3.10"
 version = "0.0.1"
