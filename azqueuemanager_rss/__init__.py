@@ -2,6 +2,7 @@ from datetime import datetime
 import dateparser
 import feedparser
 from time import mktime
+import json
 
 from azqueuemanager.extension import ExtensionBaseClass, _parser_filter 
 
@@ -53,7 +54,7 @@ class RSSTransform(ExtensionBaseClass):
         feed = feedparser.parse(self.rss_in)
 
         for item in filter(self.parser_filter, feed.entries):
-            yield item
+            yield json.dumps(item)
     
     def transform_preview(self, data: str):
         """
